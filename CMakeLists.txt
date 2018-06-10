@@ -3,4 +3,4 @@ project(pacmaze)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(pacmaze src/main.cpp src/reader/MazeReader.h)
+add_executable(pacmaze src/main.cpp src/reader/MazeReader.h src/mdp/PacMazeMdp.h)

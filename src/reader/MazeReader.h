@@ -12,10 +12,7 @@
 #include <sstream>
 
 
-int empty = 0; //-
-int wall = 1; //#
-int pacman = 2; //0
-int enemy = 3; //&
+
 
 class MazeReader {
 
@@ -59,8 +56,6 @@ void MazeReader::readMaze(int type) {
     if (!mazeFile.is_open()) {
         std::cout << "Error opening maze file" << std::endl;
     }
-
-
 
     std::string infoLine;
     getline(mazeFile, infoLine);
