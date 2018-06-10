@@ -6,12 +6,12 @@ int main() {
     std::cout << "Hello, World!" << std::endl;
 
 
-    MazeReader *fileReader = new MazeReader();
+    MazeReader fileReader;
 
-    fileReader->readMaze(1);
-    fileReader->printMaze();
+    fileReader.readMaze(1);
+    fileReader.printMaze();
 
-    PacMazeMdp *mdp = new PacMazeMdp(fileReader->maze);
+    PacMazeMdp mdp(fileReader.maze);
 
     std::vector<std::pair<int, int>> states = mdp->getStates();
 
